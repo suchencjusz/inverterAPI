@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  api:
+    build: ./
+    image: muchenergyapi
+    command:  uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 9412
+    ports:
+      - 9412:9412
+    networks:
+      - test_network
+    env_file:
+      - .env
+
+networks:
+  test_network:
+    driver: bridge
