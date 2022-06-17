@@ -9,3 +9,4 @@ The main motivation was to save electricity bill (whether running a washing mach
 # Pull requests
 ## Project is open for pull requests
 
+https://github.com/suchencjusz/ESP-Solar-panels-status-bar
